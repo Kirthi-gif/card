@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dr. Kirthi George · Oral &amp; Maxillofacial Surgeon</title>
+<meta name="description" content="Dr. Kirthi George — Oral & Maxillofacial Surgeon at PGIMER Chandigarh. Call, WhatsApp or email for consultations and referrals.">
+<meta name="theme-color" content="#f3f0e8">
+<meta name="color-scheme" content="light only">
+<meta property="og:title" content="Dr. Kirthi George · Oral & Maxillofacial Surgeon">
+<meta property="og:description" content="PGIMER Chandigarh · Call, WhatsApp or email for consultations.">
+<meta property="og:type" content="profile">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2321362b'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' fill='%23e9e4d6' text-anchor='middle'%3EKG%3C/text%3E%3C/svg%3E">
+<link rel="preload" href="fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/hanken-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/fraunces-italic.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+/* self-hosted, Latin-only subsets pinned to the weights in use (see README) */
+@font-face{font-family:"Fraunces";src:url(fonts/fraunces.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Fraunces";src:url(fonts/fraunces-italic.woff2) format("woff2");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"Hanken Grotesk";src:url(fonts/hanken-grotesk.woff2) format("woff2");font-weight:400 600;font-style:normal;font-display:swap}
+:root{
+  --bg:#f3f0e8;
+  --paper:#fbf9f4;
+  --ink:#1d2a23;
+  --ink-2:#4b5a51;
+  --ink-3:#7d877f;
+  --accent:#2f4a3c;
+  --sage:#7f9c87;
+  --sage-ink:#5e7b66;
+  --wa:#25d366;
+  --sage-soft:#e3e9df;
+  --sage-tint:#ebefe6;
+  --rule:#ddd7c9;
+  --line-art:#5f7d68;
+  --serif:"Fraunces",Georgia,"Times New Roman",serif;
+  --sans:"Hanken Grotesk",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --r:18px;
+  --grid-line:rgba(47,74,60,.07);
+  --grid:linear-gradient(var(--grid-line) 1px,transparent 1px) 0 0/22px 22px,
+         linear-gradient(90deg,var(--grid-line) 1px,transparent 1px) 0 0/22px 22px;
+  /* faint paper grain, echoing the printed card stock */
+  --grain:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .18 0 0 0 0 .22 0 0 0 0 .18 .055 0 0 0 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{
+  min-height:100vh;min-height:100dvh;
+  background:var(--bg) var(--grain);color:var(--ink);
+  font:400 16px/1.5 var(--sans);
+  -webkit-font-smoothing:antialiased;
+}
+/* faint tracing-paper grid, like a cephalometric planning sheet */
+body::before{
+  content:"";position:fixed;inset:0;z-index:0;pointer-events:none;background:var(--grid);
+  -webkit-mask-image:radial-gradient(ellipse 90% 70% at 70% 25%,#000 10%,transparent 75%);
+          mask-image:radial-gradient(ellipse 90% 70% at 70% 25%,#000 10%,transparent 75%);
+}
+.page{position:relative;z-index:1}
+a{color:inherit;text-decoration:none;-webkit-tap-highlight-color:transparent}
+svg{display:block}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;-webkit-tap-highlight-color:transparent}
+:focus-visible{outline:2px solid var(--sage);outline-offset:3px;border-radius:8px}
+
+.page{
+  max-width:480px;margin:0 auto;
+  padding:max(20px,env(safe-area-inset-top)) 20px max(28px,env(safe-area-inset-bottom));
+  display:flex;flex-direction:column;gap:28px;
+}
+
+/* top bar */
+.bar{display:flex;align-items:center;justify-content:space-between}
+/* says what the page is for, in the first place the eye lands */
+.bar-label{font-size:10.5px;line-height:1.55;letter-spacing:.16em}
+.bar-label span{display:block}
+.bar-actions{display:flex;gap:8px}
+.pill{
+  display:inline-flex;align-items:center;gap:7px;
+  font-size:13px;font-weight:500;color:var(--ink-2);
+  height:40px;padding:0 15px;border:1px solid var(--rule);border-radius:999px;
+  background:color-mix(in srgb,var(--paper) 60%,transparent);
+  transition:background .15s,border-color .15s;
+}
+.pill:hover{background:var(--paper);border-color:var(--sage)}
+.pill svg{width:15px;height:15px}
+.pill.round{width:40px;height:40px;padding:0;justify-content:center}
+.pill.round svg{width:16px;height:16px}
+
+/* identity */
+.identity{position:relative}
+.profile{
+  position:absolute;right:-6px;top:0;height:220px;width:auto;
+  color:var(--line-art);pointer-events:none;
+}
+.profile path{fill:none;stroke:currentColor;stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round}
+.profile .soft{stroke-width:1.2;opacity:.8}
+.profile .faint{stroke-width:1;opacity:.45}
+.profile .bone{stroke-width:1;opacity:.38}
+.profile .lefort{stroke-width:1.2;stroke-dasharray:2 5;opacity:.75}
+.profile .draw{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 2s .15s cubic-bezier(.6,.1,.2,1) forwards}
+.profile .later{animation:fade .9s 1.5s both}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes fade{from{opacity:0}}
+
+.eyebrow{
+  font-size:11.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);
+}
+.name{
+  font:400 clamp(46px,13vw,60px)/.95 var(--serif);
+  font-variation-settings:"opsz" 144;letter-spacing:-.02em;
+  margin:16px 0 18px;position:relative;
+}
+.name .dr{
+  display:block;font:italic 400 .36em/1 var(--serif);font-variation-settings:"opsz" 36;
+  letter-spacing:0;color:var(--sage-ink);margin-bottom:.3em;
+}
+.name em{display:block;font-style:italic;padding-left:.38em}
+.role{font-size:15.5px;font-weight:500;color:var(--ink)}
+.creds{margin-top:10px;display:grid;gap:7px}
+.creds div{display:flex;align-items:flex-start;gap:10px}
+/* degree as a small tinted badge so it reads at a glance */
+.creds dt{
+  flex:none;width:50px;padding:3px 0 2px;border-radius:6px;text-align:center;
+  background:var(--sage-soft);color:var(--accent);
+  font-size:12.5px;font-weight:600;letter-spacing:.08em;line-height:1.3;
+}
+.creds dd{display:flex;align-items:flex-start;gap:7px;font-size:13.5px;line-height:1.35;color:var(--ink-2);padding-top:1px}
+.creds dd svg{flex:none;width:15px;height:15px;margin-top:1px;color:var(--sage-ink)}
+.tagline{
+  margin-top:16px;display:flex;align-items:center;gap:10px;
+  font:italic 400 15.5px/1 var(--serif);color:var(--sage-ink);
+}
+.tagline i{width:3px;height:3px;border-radius:50%;background:currentColor;opacity:.6}
+
+/* contact list */
+.contact{
+  list-style:none;border:1px solid var(--rule);border-radius:var(--r);
+  background:var(--paper);overflow:hidden;
+  box-shadow:0 1px 0 rgba(29,42,35,.03),0 14px 32px -28px rgba(29,42,35,.3);
+}
+.contact li + li{border-top:1px solid var(--rule)}
+.row{
+  display:flex;align-items:center;gap:14px;padding:13px 16px;
+  transition:background .2s;
+}
+.row:hover{background:var(--sage-tint)}
+.ic{
+  width:38px;height:38px;flex:none;border-radius:50%;
+  display:grid;place-items:center;
+  border:1px solid var(--rule);color:var(--accent);background:var(--bg);
+}
+.ic svg{width:17px;height:17px}
+.row .txt{min-width:0;flex:1}
+.row b{display:block;font:400 18px/1.2 var(--serif);font-variation-settings:"opsz" 24;letter-spacing:-.005em}
+.row small{display:block;font-size:12.5px;color:var(--ink-3);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+/* one stroke: a tooth whose outline opens and runs out into the arrow */
+.go{flex:none;width:46px;height:23px;color:var(--ink-3);transition:color .2s,transform .35s cubic-bezier(.2,.7,.2,1)}
+.go path{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.1s cubic-bezier(.6,.1,.2,1) forwards}
+.contact li:nth-child(1) .go path{animation-delay:1.7s}
+.contact li:nth-child(2) .go path{animation-delay:1.85s}
+.contact li:nth-child(3) .go path{animation-delay:2s}
+.row:hover .go,.row:active .go{color:var(--accent);transform:translateX(3px)}
+/* Call / Email: the number and address are what people need, so they lead */
+.row .lbl{margin:0 0 2px;font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+.row b.val{font:500 15.5px/1.25 var(--sans);letter-spacing:.005em;color:var(--ink);font-variant-numeric:tabular-nums;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+/* WhatsApp leads */
+.row.lead{background:var(--sage-tint)}
+.row.lead .ic{background:var(--sage-soft);border-color:transparent;color:var(--accent)}
+.row.lead .ic svg{width:19px;height:19px}
+.row.lead .go{color:var(--accent)}
+.row.lead:hover{background:var(--sage-soft)}
+
+/* areas */
+.section-h{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.section-h::after{content:"";flex:1;height:1px;background:var(--rule)}
+.areas{display:flex;flex-wrap:wrap;gap:8px;list-style:none}
+.areas li{
+  font-size:13.5px;color:var(--ink-2);
+  padding:6px 12px;border-radius:999px;border:1px solid var(--rule);
+}
+
+/* footer */
+.foot{
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  font-size:12.5px;color:var(--ink-3);
+}
+.foot strong{font-weight:600;color:var(--ink-2)}
+
+.toast{
+  position:fixed;left:50%;bottom:max(24px,env(safe-area-inset-bottom));
+  transform:translate(-50%,20px);opacity:0;pointer-events:none;
+  background:var(--ink);color:var(--bg);font-size:13.5px;font-weight:500;
+  padding:10px 16px;border-radius:999px;transition:.25s ease;
+}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
+/* gentle entrance */
+.rise{animation:rise .6s cubic-bezier(.2,.7,.2,1) both}
+.rise:nth-child(2){animation-delay:.06s}
+.rise:nth-child(3){animation-delay:.12s}
+@keyframes rise{from{opacity:0;transform:translateY(10px)}}
+/* identity holds the absolutely-placed drawing; a transform would re-anchor it */
+.identity.rise{animation-name:fade}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .profile .draw,.go path{stroke-dashoffset:0}
+}
+
+/* ---------- desktop / tablet landscape: one full screen, card-like ---------- */
+@media (min-width:900px){
+  body{display:grid;place-items:center;padding:clamp(24px,4vw,56px)}
+  .page{
+    max-width:1120px;width:100%;padding:0;gap:0;
+    display:grid;grid-template-columns:1.05fr 1fr;
+    background:var(--paper) var(--grain);border:1px solid var(--rule);border-radius:28px;
+    box-shadow:0 30px 80px -40px rgba(29,42,35,.45);
+    overflow:hidden;min-height:min(680px,calc(100dvh - 2*clamp(24px,4vw,56px)));
+  }
+  .left{
+    position:relative;padding:clamp(36px,4.5vw,56px);
+    display:flex;flex-direction:column;justify-content:space-between;gap:32px;
+    background:radial-gradient(ellipse 75% 65% at 72% 55%,transparent 15%,var(--bg) 85%),var(--grid),var(--grain);
+    background-color:var(--bg);border-right:1px solid var(--rule);
+  }
+  .right{
+    padding:clamp(36px,4.5vw,56px);
+    display:flex;flex-direction:column;gap:32px;justify-content:center;
+  }
+  .identity{position:static}
+  .profile{right:clamp(16px,2.4vw,36px);top:auto;bottom:clamp(20px,3vw,36px);height:auto;width:clamp(160px,14vw,210px)}
+  .name{font-size:clamp(64px,6.4vw,88px);margin:20px 0 22px}
+  .role{font-size:17px}
+  .creds dd{font-size:14.5px}
+  .creds dd span{max-width:25ch}
+  .tagline{font-size:18px;margin-top:22px}
+  .row{padding:16px 20px}
+  .contact{box-shadow:none}
+  .foot{flex-direction:column;align-items:flex-start;gap:2px;position:relative;z-index:1}
+}
+@media (min-width:900px) and (max-height:780px){
+  body{padding:16px 24px}
+  .page{min-height:calc(100dvh - 32px)}
+  .left,.right{padding:28px 40px}
+  .right{gap:22px}
+  .name{font-size:clamp(54px,5.2vw,72px);margin:14px 0 16px}
+  .tagline{margin-top:14px}
+  .row{padding:12px 18px}
+  .areas{gap:6px}
+  .areas li{padding:4px 10px;font-size:13px}
+}
+
+
+@media (min-width:900px) and (max-height:600px){
+  .name{margin-top:0}
+  .tagline{margin-top:10px}
+}
+/* ---------- phones: exactly one screen; spare height goes to the hero ---------- */
+@media (max-width:899px){
+  .left,.right{display:contents}
+  .bar{order:0}.identity{order:1}.contact{order:2}.focus{order:3}.left .foot{order:4}
+  /* "air": 0 on short screens, up to 32px on tall ones; spread through the
+     layout so spare height becomes breathing room instead of two big voids */
+  .page{
+    --air:clamp(0px,calc((100dvh - 760px) / 6),32px);
+    min-height:100vh;min-height:100dvh;gap:calc(clamp(14px,2.2dvh,22px) + var(--air) * .4);
+    padding:max(14px,env(safe-area-inset-top)) 18px max(12px,env(safe-area-inset-bottom));
+  }
+  /* spare height splits 3:1 above/below the hero instead of pooling on top */
+  .identity{flex:1;display:flex;flex-direction:column}
+  .identity::before{content:"";flex:3 1 0}
+  .identity::after{content:"";flex:1 1 0}
+  .id-text{position:relative}
+  .profile{top:-26px;right:-4px;height:calc(100% - 30px);max-width:42vw}
+  /* name follows height, but never outgrows a narrow screen */
+  .name{font-size:min(clamp(46px,7.8dvh,72px),15.5vw);margin:clamp(8px,1.6dvh,18px) 0 calc(clamp(10px,1.6dvh,16px) + var(--air) * .4)}
+  .creds{margin-top:calc(10px + var(--air) * .3);gap:calc(7px + var(--air) * .15)}
+  .tagline{margin-top:calc(clamp(10px,1.6dvh,16px) + var(--air) * .45)}
+  .row{padding:calc(clamp(8px,1.3dvh,13px) + var(--air) * .2) 14px;gap:12px}
+  .row b{font-size:17px}
+  .row small{font-size:12px;margin-top:1px}
+  .ic{width:34px;height:34px}
+  .ic svg{width:16px;height:16px}
+  .section-h{margin-bottom:calc(8px + var(--air) * .15)}
+  /* areas as an even two-column list: both edges align and the width is used */
+  .areas{display:grid;grid-template-columns:1fr 1fr;gap:4px 14px;font-size:13px;line-height:1.35;color:var(--ink-2)}
+  .areas li{display:flex;align-items:baseline;gap:8px;border:0;padding:0;border-radius:0;font-size:inherit}
+  .areas li::before{content:"";flex:none;width:4px;height:4px;border-radius:50%;background:var(--sage);transform:translateY(-2px)}
+  .foot{font-size:12px}
+  .foot span:last-child{display:none}
+}
+/* tall phones: the drawing grows up into the spare height instead of leaving a void */
+@media (max-width:899px) and (min-height:860px){
+  .profile{top:-44px;height:calc(100% - 12px);max-width:48vw}
+}
+/* narrow phones: keep the drawing clear of the top bar and the name */
+@media (max-width:379px){
+  .profile{top:-14px;right:-8px;height:calc(100% - 46px);max-width:38vw}
+  .pill:not(.round){padding:0 13px}
+}
+@media (max-width:899px) and (max-height:760px){
+  .name{margin-top:0}
+}
+@media (max-width:899px) and (max-height:700px){
+  .tagline{display:none}
+  .areas{gap:2px 12px;font-size:12.5px}
+  .page{gap:10px}
+}
+@media (max-width:899px) and (max-height:600px){
+  .row small{display:none}
+  .page{gap:10px}
+  .name{font-size:38px;margin-bottom:8px}
+  .creds{margin-top:6px;gap:4px}
+  .creds dt{font-size:11px;width:44px;padding:2px 0 1px}
+  .section-h{margin-bottom:5px}
+  .page{padding-bottom:max(8px,env(safe-area-inset-bottom))}
+}
+.id-text .name{margin-top:0}
+</style>
+</head>
+<body>
+<main class="page">
+
+  <div class="left">
+    <div class="bar rise">
+      <p class="eyebrow bar-label"><span>Consultations</span><span>&amp; Referrals</span></p>
+      <div class="bar-actions">
+        <a class="pill" href="kirthi-george.vcf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></svg>Save contact</a>
+        <button class="pill round" id="share" type="button" aria-label="Share this card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><path d="m16 6-4-4-4 4"/><path d="M12 2v13"/></svg></button>
+      </div>
+    </div>
+
+    <header class="identity rise">
+      <div class="id-text">
+        <!-- Facial profile line drawing with the jaw shown faintly beneath -->
+        <svg class="profile" viewBox="60 20 196 310" preserveAspectRatio="xMaxYMin meet" aria-hidden="true">
+          <path class="draw" pathLength="1" d="M124.4 28C109.4 44 102.5 64 103.7 86C103.7 95 102.5 102 99.1 107C93.3 122 84.2 140 75 154C70.3 160 70.3 167 77.2 169C83 171 88.8 172 92.2 175C93.3 181 88.8 186 86.5 190C85.3 193 87.6 195 92.2 196C88.8 200 86.5 204 88.8 209C91 214 96.8 216 99.1 220C95.7 229 92.2 240 97.9 249C106 258 120.9 261 137.1 259C152 259 164.6 266 170.4 282C173.8 292 176.1 306 176.1 322"/>
+          <path class="draw" pathLength="1" d="M137.1 259C161.2 253 183.1 240 195.7 220C203.8 207 207.2 193 207.2 180"/>
+          <path class="draw" pathLength="1" d="M204.9 118C221 112 234.8 124 232.5 142C231.3 156 223.3 164 216.4 170C212.9 174 211.8 178 214.1 182"/>
+          <g class="later">
+            <path class="soft" d="M107.2 99C117.5 93 131.3 92 143.9 96"/>
+            <path class="soft" d="M112.9 113C118.7 109 126.7 109 133.6 113"/>
+            <path class="faint" d="M114 116C119.8 118 125.5 118 131.3 116"/>
+            <path class="faint" d="M85.3 165C89.9 162 95.7 163 97.9 167"/>
+            <path class="faint" d="M215.2 128C223.3 126 227.9 134 224.4 144"/>
+            <path class="faint" d="M209.5 228C211.8 260 216.4 292 223.3 322"/>
+            <!-- mandible, seen through the soft tissue -->
+            <path class="bone" d="M104.8 222C101.4 230 101.4 240 106 246C112.9 252 129 254 145.1 249C165.8 243 181.9 231 191.1 214C195.7 204 196.8 192 195.7 180C195.7 172 198 166 203.8 162"/>
+            <!-- Le Fort I osteotomy line -->
+            <path class="lefort" d="M94.5 179C129 177 163.5 173 204.9 167"/>
+          </g>
+        </svg>
+        <h1 class="name"><span class="dr">Dr.</span>Kirthi <em>George</em></h1>
+        <p class="role">Oral &amp; Maxillofacial Surgeon</p>
+        <dl class="creds">
+          <div><dt>MDS</dt><dd><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="10" r="1"/><path d="M22 20V8h-4l-6-4-6 4H2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2"/><path d="M6 17v.01M6 13v.01M18 17v.01M18 13v.01"/><path d="M14 22v-5a2 2 0 0 0-2-2a2 2 0 0 0-2 2v5"/></svg><span>PGIMER, Chandigarh</span></dd></div>
+          <div><dt>BDS</dt><dd><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="10" r="1"/><path d="M22 20V8h-4l-6-4-6 4H2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2"/><path d="M6 17v.01M6 13v.01M18 17v.01M18 13v.01"/><path d="M14 22v-5a2 2 0 0 0-2-2a2 2 0 0 0-2 2v5"/></svg><span>Goa Dental College and Hospital, Bambolim</span></dd></div>
+        </dl>
+        <p class="tagline">Care <i></i> Function <i></i> Aesthetics</p>
+      </div>
+    </header>
+
+    <footer class="foot rise">
+      <span>Reg. No. <strong>A-1246</strong></span>
+      <span>Postgraduate Institute of Medical Education &amp; Research</span>
+    </footer>
+  </div>
+
+  <div class="right">
+    <ul class="contact rise" aria-label="Contact">
+      <li><a class="row lead" href="https://wa.me/919876543210?text=Hi%20Dr.%20Kirthi" target="_blank" rel="noopener">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></span>
+        <span class="txt"><b>WhatsApp</b><small>Message for a consultation</small></span>
+        <svg class="go" viewBox="0 0 48 24" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path pathLength="1" d="M19.5 8.2C19.5 6 18.4 4 16 4c-1.6 0-2.4.9-4 .9S9.6 4 8 4C5.6 4 4.5 6 4.5 8.2c0 2.2 1 3.6 1.5 6 .6 2.9.9 5.8 2.5 5.8 1.5 0 1.6-3.9 3.5-3.9s2 3.9 3.5 3.9c1.6 0 1.9-2.9 2.5-5.8C18.6 12.3 20.2 11.6 23 11.6H45M41 8l4 3.6-4 3.6"/></svg>
+      </a></li>
+      <li><a class="row" href="tel:+919876543210">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+        <span class="txt"><small class="lbl">Call</small><b class="val">+91 98765 43210</b></span>
+        <svg class="go" viewBox="0 0 48 24" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path pathLength="1" d="M19.5 8.2C19.5 6 18.4 4 16 4c-1.6 0-2.4.9-4 .9S9.6 4 8 4C5.6 4 4.5 6 4.5 8.2c0 2.2 1 3.6 1.5 6 .6 2.9.9 5.8 2.5 5.8 1.5 0 1.6-3.9 3.5-3.9s2 3.9 3.5 3.9c1.6 0 1.9-2.9 2.5-5.8C18.6 12.3 20.2 11.6 23 11.6H45M41 8l4 3.6-4 3.6"/></svg>
+      </a></li>
+      <li><a class="row" href="mailto:kirthi.george@gmail.com?subject=Consultation%20request">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span>
+        <span class="txt"><small class="lbl">Email</small><b class="val">kirthi.george@gmail.com</b></span>
+        <svg class="go" viewBox="0 0 48 24" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path pathLength="1" d="M19.5 8.2C19.5 6 18.4 4 16 4c-1.6 0-2.4.9-4 .9S9.6 4 8 4C5.6 4 4.5 6 4.5 8.2c0 2.2 1 3.6 1.5 6 .6 2.9.9 5.8 2.5 5.8 1.5 0 1.6-3.9 3.5-3.9s2 3.9 3.5 3.9c1.6 0 1.9-2.9 2.5-5.8C18.6 12.3 20.2 11.6 23 11.6H45M41 8l4 3.6-4 3.6"/></svg>
+      </a></li>
+    </ul>
+
+    <section class="focus rise" aria-labelledby="focus-h">
+      <div class="section-h"><h2 class="eyebrow" id="focus-h">Specialisations</h2></div>
+      <ul class="areas">
+        <li>Disimpactions</li>
+        <li>Maxillofacial trauma</li>
+        <li>Orthognathic surgery</li>
+        <li>TMJ disorders</li>
+        <li>Oral cancer biopsy</li>
+        <li>Potentially malignant disorders</li>
+        <li>Jaw cysts &amp; pathology</li>
+        <li>Implants &amp; bone grafting</li>
+        <li>Reconstructive surgery</li>
+        <li>Pre-prosthetic surgery</li>
+        <li>Minor oral surgery</li>
+      </ul>
+    </section>
+  </div>
+
+</main>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+const toast = msg => {
+  const t = document.getElementById('toast');
+  t.textContent = msg; t.classList.add('show');
+  clearTimeout(toast.h); toast.h = setTimeout(() => t.classList.remove('show'), 2600);
+};
+// select-and-copy runs inside the click itself, so it reaches the system clipboard
+// even where navigator.clipboard resolves without writing anything (some Linux/Brave setups)
+const copyText = text => {
+  const ta = document.createElement('textarea');
+  ta.value = text; ta.setAttribute('readonly', '');
+  ta.style.cssText = 'position:fixed;top:0;left:0;opacity:0;pointer-events:none';
+  document.body.append(ta); ta.select(); ta.setSelectionRange(0, text.length);
+  let ok = false;
+  try { ok = document.execCommand('copy'); } catch (e) {}
+  ta.remove();
+  return ok;
+};
+document.getElementById('share').addEventListener('click', async () => {
+  const url = location.href.split('#')[0];
+  if (navigator.share) {
+    try { await navigator.share({title: 'Dr. Kirthi George', text: 'Oral & Maxillofacial Surgeon · PGIMER Chandigarh', url}); return; }
+    catch (e) { if (e.name === 'AbortError') return; }
+  }
+  if (copyText(url)) return toast('Link copied');
+  try { await navigator.clipboard.writeText(url); toast('Link copied'); }
+  catch (e) { toast(url); }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+N:George;Kirthi;;Dr.;
+FN:Dr. Kirthi George
+TITLE:Oral & Maxillofacial Surgeon
+ORG:PGIMER Chandigarh
+TEL;TYPE=CELL,VOICE:+919876543210
+EMAIL;TYPE=INTERNET:kirthi.george@gmail.com
+ADR;TYPE=WORK:;;PGIMER, Sector 12;Chandigarh;Chandigarh;160012;India
+NOTE:Reg. No. A-1246
+END:VCARD
